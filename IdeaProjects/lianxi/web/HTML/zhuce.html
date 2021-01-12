@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <style>
+        #yemian{
+            background-image: url("./img/122.jpg");
+        }
+        #imglogo{
+            margin-left: 275px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body >
+
+<form action="2-shop.html">
+    <div>
+        <table>
+            <!--logo 和图片-->
+            <tr>
+                <table width="100%">
+                    <tr>
+                        <td><img src="../image/logo.jpg"></td>
+
+                        <td>
+                            <div id="imglogo">
+                                <img src="../image/img5.jpg">
+                                <img src="../image/img6.jpg">
+                                <img src="../image/img7.jpg">
+                                <img src="../image/img4.jpg">
+                            </div>
+                        </td>
+                        <td align="right">
+                            <a href="#"><font>登录</font></a>&nbsp;&nbsp;&nbsp;
+                            <a href="./zhuce.html" target="new" ><font>注册</font></a>&nbsp;&nbsp;&nbsp;
+                            <a href="#"><font>购物车</font></a>&nbsp;&nbsp;&nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </tr>
+        </table>
+    </div>
+    <!-- 注册列表-->
+    <div id="yemian">
+        <hr>
+    <table  align="center" width="40%" bgcolor="white" >
+        <tr>
+            <td>
+                <font color="#a9a9a9" size="5">会员注册</font><br>
+                <font color="#a9a9a9" size="2">USER&nbsp;REGISTER</font>
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" >
+                    <tr align="center">
+                        <td width="40%" align="right">
+                            <font>用户名</font>
+                        </td>
+                        <td width="60%" align="left">
+                            <input type="text" placeholder="请输入用户名">
+                        </td>
+                    </tr><br>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" >
+                    <tr align="center">
+                        <td width="40%" align="right">
+                            <font>密码</font>
+                        </td>
+                        <td width="60%" align="left">
+                            <input type="password" placeholder="请输入密码">
+                        </td><br>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" >
+                    <tr align="center">
+                        <td width="40%" align="right">
+                            <font>确认密码</font>
+                        </td>
+                        <td width="60%" align="left">
+                            <input type="password" placeholder="请再次输入密码">
+                        </td><br>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" >
+                    <tr align="center">
+                        <td width="40%" align="right">
+                            <font>Email</font>
+                        </td>
+                        <td width="60%" align="left">
+                            <input type="text" placeholder="请输入Email">
+                        </td><br>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" >
+                    <tr align="center">
+                        <td width="40%" align="right">
+                            <font>姓名</font>
+                        </td>
+                        <td width="60%" align="left">
+                            <input type="text" placeholder="请输入姓名">
+                        </td><br>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" >
+                    <tr align="center">
+                        <td width="40%" align="right">
+                            <font>性别</font>
+                        </td>
+                        <td width="60%" align="left">
+                            <!--                        <input type="text" placeholder="请输入性别">-->
+                            <input type="radio" name="gender" value="man">男
+                            <input type="radio" name="gender" value="femela">女
+                        </td><br>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" >
+                    <tr align="center">
+                        <td width="40%" align="right">
+                            <font>出生日期</font>
+                        </td>
+                        <td width="60%" align="left">
+                            <input type="text" placeholder="请输入年/月/日">
+                        </td><br>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" >
+                    <tr align="center">
+                        <td width="40%" align="right">
+                            <font>备注</font>
+                        </td>
+                        <td width="60%" align="left">
+                            <textarea name="intro" cols="25" rows="">备注</textarea>
+                        </td><br>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" >
+                    <tr align="center">
+                        <td width="40%" align="right">
+                            <font>所在城市</font>
+                        </td>
+                        <td width="60%" align="left">
+                            <!--                        <input type="text" placeholder="请输入用户名">-->
+                            <select name="city">
+                                <option>北京</option>
+                                <option>上海</option>
+                                <option>天津</option>
+                                <option>河北</option>
+                                <option>山西</option>
+                                <option>陕西</option>
+                            </select>
+                        </td><br>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" >
+                    <tr align="center">
+                        <td>
+                            <input style="background-color: red ; width: 100px; height: 40px;color:white"
+                                   type="submit" value="注册" >
+                            <input style="width: 100px;height: 40px;background-color: yellow;"
+                                   type="reset" value="重填">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </div>
+    <div>
+        <hr>
+        <table>
+        <tr>
+            <table width="100%">
+                <tr align="center">
+                    <td>
+                        <p>
+                            <a href="#"><font>联系我们</font></a>&nbsp;
+                            <a href="#"><font>联系客服</font></a>&nbsp;
+                            <a href="#"><font>合作招商</font></a>&nbsp;
+                            <a href="#"><font>商家指南</font></a>&nbsp;
+                            <a href="#"><font>营销中心</font></a>&nbsp;
+                            <a href="#"><font>手机帮助</font></a>&nbsp;
+                            <a href="#"><font>销售联盟</font></a>&nbsp;
+                        </p>
+                    </td>
+                </tr>
+                <tr >
+                    <td align="center">
+                        <font>&copy;2005-2020东易买&nbsp;版权所有，并保留所有权</font>
+                    </td>
+                </tr>
+            </table>
+        </tr>
+        </table>
+    </div>
+</form>
+
+</body>
+</html>

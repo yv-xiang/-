@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div>
+    <img src="../img/1.jpg" id="img">
+</div>
+<script >
+    var  div=document.getElementsByTagName("div")[0];
+    var  img=document.getElementById("img");
+    var i=2;
+    setInterval(function(){
+        img.src="../img/"+i+".jpg";
+        i++;
+        if(i>5){
+            i=1;
+        }
+    },2000)
+</script>
+</body>
+</html>
+

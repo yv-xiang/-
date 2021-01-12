@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ap="http://www.springframework.org/schema/aop"
+       xmlns:aop="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <bean id="userService" class="com.offcn.spring.aop.service.impl.UserServiceImpl"></bean>
+    <bean id="aop" class="com.offcn.spring.aop.aspect.TransactionAop"></bean>
+    <aop:config>
+        <ap:pointcut id="txPointCut" expression="execution(* com.offcn.spring.aop.service.impl.*.save*(..))"/>
+        <aop:aspect ref="txAspect">
+            <aop:before method="createTransaction" pointcut-ref="txPointCut"/>
+            <!--<aop:after-returning method="commitTransaction" pointcut-ref="txPointCut"/>-->
+            <!--<aop:after-throwing method="rollbackTransaction" pointcut-ref="txPointCut"/>-->
+            <!--<aop:after method="closeTransaction" pointcut-ref="txPointCut"/>-->
+
+            <!--<aop:around method="arroundTransaction" pointcut-ref="txPointCut"/>-->
+        </aop:aspect>
+    </aop:config>
+</beans>

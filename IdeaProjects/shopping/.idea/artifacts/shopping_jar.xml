@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="shopping:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/shopping_jar</output-path>
+    <root id="archive" name="shopping.jar">
+      <element id="module-output" name="shopping" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/web/WEB-INF/lib/commons-dbutils-1.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/web/WEB-INF/lib/c3p0-0.9.1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/web/WEB-INF/lib/commons-logging-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="E:/Tomcat 9.0/lib/servlet-api.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

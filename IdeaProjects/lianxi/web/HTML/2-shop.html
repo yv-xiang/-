@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>东易买</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        #imglogo{
+            margin-left: 275px;
+        }
+    </style>
+</head>
+<body>
+<table>
+<!--logo 和图片-->
+    <tr>
+        <table width="100%">
+            <tr>
+                <td><img src="../image/logo.jpg"></td>
+
+                <td>
+                    <div id="imglogo">
+                    <img src="../image/img5.jpg">
+                    <img src="../image/img6.jpg">
+                    <img src="../image/img7.jpg">
+                    <img src="../image/img4.jpg">
+                    </div>
+                </td>
+                <td align="right">
+                    <a href="#"><font>登录</font></a>&nbsp;&nbsp;&nbsp;
+                    <a href="./zhuce.html" target="new" ><font>注册</font></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#"><font>购物车</font></a>&nbsp;&nbsp;&nbsp;
+                </td>
+            </tr>
+        </table>
+    </tr>
+
+<!-- 导航栏-->
+    <tr>
+        <table bgcolor="#808080" width="100%" height="50px">
+            <tr >
+                <td align="centre"><a href="#"><font color="white" size="4">首页</font></a></td>
+                <td align="centre"><a href="#"><font color="white" size="4">精品手机</font></a></td>
+                <td align="centre"><a href="#"><font color="white" size="4">时尚数码</font></a></td>
+                <td align="centre"><a href="#"><font color="white" size="4">办公设备</font></a></td>
+                <td align="centre"><a href="#"><font color="white" size="4">主板显卡</font></a></td>
+                <td align="centre"><a href="#"><font color="white" size="4">智能设备</font></a></td>
+                <td align="centre"><a href="#"><font color="white" size="4">MacBook</font></a></td>
+            </tr>
+
+        </table>
+    </tr>
+
+<!--轮播图 -->
+    <tr>
+        <p></p>
+        <img src="../image/img8.jpg" id="im" width="100%" height="350px">
+    </tr>
+    <script>
+        onload = function() {
+            var  imge=document.getElementById("im");
+            var num = 0;
+            var i = 0;
+            var arry =["../image/img8.jpg","../image/img9.jpg"];
+            setInterval(function () {
+                imge.src=arry[i];
+
+                num++;
+                i = num%arry.length;
+            },2000)
+        }
+    </script>
+<!--热门商品列表 -->
+   <hr>
+    <tr>
+        <td>
+            <table width="100%">
+                <tr colspan="5">
+                    <a><font size="5px">热门商品</font></a>
+                    <img src="../image/title2.jpg">
+                </tr>
+                <!--商品列表第一行 -->
+                <tr align="center">
+                    <td>
+                        <img src="../image/hm00001min.jpg"  width="70%"><br>
+                        <font color="red">￥：1499</font><br />
+                        <span>荣耀9X</span>
+                    </td>
+                    <td>
+                        <img src="../image/hm00002min.jpg"  width="70%"><br>
+                        <font color="red">￥：3210</font><br />
+                        <span>荣耀20 李现同款</span>
+                    </td>
+                    <td>
+                        <img src="../image/hm00003min.jpg"  width="70%"><br>
+                        <font color="red">￥：999</font><br />
+                        <span>荣耀20i 3200万</span>
+                    </td>
+                    <td>
+                        <img src="../image/hm00004min.jpg"  width="70%"><br>
+                        <font color="red">￥：1999</font><br />
+                        <span>Redmi 8A 5000m</span>
+                    </td>
+                    <td>
+                        <img src="../image/hm00005min.jpg"  width="70%"><br>
+                        <font color="red">￥：1944</font><br />
+                        <span>hmmin</span>
+                    </td>
+                </tr>
+                <!--商品列表第二行 -->
+                <tr align="center">
+                    <td>
+                        <img src="../image/ip700006min.jpg"  width="70%"><br>
+                        <font color="red">￥：4322</font><br>
+                        <span>苹果11</span>
+                    </td>
+                    <td>
+                        <img src="../image/ip800004min.jpg"  width="70%"><br>
+                        <font color="red">￥：2421</font><br>
+                        <span>苹果se</span>
+                    </td>
+                    <td>
+                        <img src="../image/ip1100001min.jpg"  width="70%"><br>
+                        <font color="red">￥：1241</font><br>
+                        <span>苹果34</span>
+                    </td>
+                    <td>
+                        <img src="../image/ip1100002min.jpg"  width="70%"><br>
+                        <font color="red">￥：2421</font><br>
+                        <span>苹果23</span>
+                    </td>
+                    <td>
+                        <img src="../image/ip1100003min.jpg"  width="70%"><br>
+                        <font color="red">￥：3411</font><br>
+                        <span>苹果11</span>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <!--轮播图 -->
+    <tr>
+        <p></p>
+        <img src="../image/img2.webp" width="100%" height="350px">
+    </tr>
+    <!--优选商品列表 -->
+    <hr>
+    <tr>
+        <td>
+            <table width="100%">
+                <tr colspan="5">
+                    <a><font size="5px">优选商品</font></a>
+                    <img src="../image/title2.jpg">
+                </tr>
+
+                <!--商品列表第三行 -->
+                <tr align ="center">
+                    <td>
+                        <img src="../image/xm00001min.jpg" width="70%"><br>
+                        <font color="red">￥：1242</font><br>
+                        <span>小米7</span>
+                    </td>
+                    <td>
+                        <img src="../image/xm00002min.jpg"  width="70%"><br>
+                        <font color="red">￥：3531</font><br>
+                        <span>小米4</span>
+                    </td>
+                    <td>
+                        <img src="../image/xm00003min.jpg" width="70%"><br>
+                        <font color="red">￥：1231</font><br>
+                        <span>小米3</span>
+                    </td>
+                    <td>
+                        <img src="../image/xm00004min.jpg" width="70%"><br>
+                        <font color="red">￥：2123</font><br>
+                        <span>小米2</span>
+                    </td>
+                    <td>
+                        <img src="../image/pro13min.jpg" width="70%"><br>
+                        <font color="red">￥：2133</font><br>
+                        <span>小米plus</span>
+                    </td>
+                </tr>
+                <!--商品列表第四行 -->
+                <tr align="center">
+                    <td>
+                        <img src="../image/ry00001min.jpg" width="70%"><br>
+                        <font color="red">￥：2132</font><br>
+                        <span>荣耀5e</span>
+                    </td>
+                    <td>
+                        <img src="../image/ry00002min.jpg" width="70%"><br>
+                        <font color="red">￥：2342</font><br>
+                        <span>荣耀4</span>
+                    </td>
+                    <td>
+                        <img src="../image/ry00003min.jpg" width="70%"><br>
+                        <font color="red">￥：1222</font><br>
+                        <span>荣耀3</span>
+                    </td>
+                    <td>
+                        <img src="../image/ry00004min.jpg" width="70%"><br>
+                        <font color="red">￥：1234</font><br>
+                        <span>荣耀2</span>
+                    </td>
+                    <td>
+                        <img src="../image/ry00005min.jpg" width="70%"><br>
+                        <font color="red">￥：1242</font><br>
+                        <span>荣耀1</span>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+<!--底部栏实现 -->
+    <hr>
+    <tr>
+        <table width="100%">
+            <tr>
+                <img src="../image/img1.webp" width="100%">
+            </tr>
+            <tr align="center">
+                <td>
+                    <p>
+                <a href="#"><font>联系我们</font></a>&nbsp;
+                <a href="#"><font>联系客服</font></a>&nbsp;
+                <a href="#"><font>合作招商</font></a>&nbsp;
+                <a href="#"><font>商家指南</font></a>&nbsp;
+                <a href="#"><font>营销中心</font></a>&nbsp;
+                <a href="#"><font>手机帮助</font></a>&nbsp;
+                <a href="#"><font>销售联盟</font></a>&nbsp;
+                    </p>
+                </td>
+            </tr>
+            <tr >
+                <td align="center">
+                    <font>&copy;2005-2020东易买&nbsp;版权所有，并保留所有权</font>
+                </td>
+            </tr>
+        </table>
+    </tr>
+</table>
+</body>
+</html>

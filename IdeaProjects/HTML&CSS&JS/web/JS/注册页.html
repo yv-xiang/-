@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册页</title>
+   <script>
+       function checkUserName()
+       {
+           var usernameReg = /^[a-z]{6,10}$/;
+           var usernameValue = document.getElementById("username").value;
+           var usernameSpan = document.getElementById("usernameSpan");
+
+           if(usernameReg.test(usernameValue))
+           {
+               usernameSpan.style.color = "green"
+               usernameSpan.innerHTML = "√";
+           }
+           else{
+               usernameSpan.style.color = "red"
+               usernameSpan.innerHTML = "×";
+           }
+       }
+       function checkpassword()
+       {
+           var passwordReg = /^[0-9]{6,10}$/;
+           var passwordValue = document.getElementById("password").value;
+           var passwordSpan = document.getElementById("passwordSpan");
+
+           if(passwordReg.test(passwordValue))
+           {
+               passwordSpan.style.color = "green"
+               passwordSpan.innerHTML = "√";
+           }
+           else{
+               passwordSpan.style.color = "red"
+               passwordSpan.innerHTML = "×";
+           }
+       }
+   </script>
+</head>
+<body>
+<form>
+    <div>
+        <table>
+            <!--logo 和图片-->
+            <tr>
+                <table width="100%">
+                    <tr>
+                        <td><img src="../image/logo.jpg"></td>
+
+                        <td>
+                            <div id="imglogo">
+                                <img src="../image/img5.jpg">
+                                <img src="../image/img6.jpg">
+                                <img src="../image/img7.jpg">
+                                <img src="../image/img4.jpg">
+                            </div>
+                        </td>
+                        <td align="right">
+                            <a href="#"><font>登录</font></a>&nbsp;&nbsp;&nbsp;
+                            <a href="./zhuce.html" target="new" ><font>注册</font></a>&nbsp;&nbsp;&nbsp;
+                            <a href="#"><font>购物车</font></a>&nbsp;&nbsp;&nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </tr>
+        </table>
+</div>
+<div >
+
+    <hr>
+    <div>
+        <table  align="center" width="40%" bgcolor="white" >
+        <tr>
+            <td>
+                <font color="#a9a9a9" size="5">会员注册</font><br>
+                <font color="#a9a9a9" size="2">USER&nbsp;REGISTER</font>
+                <hr>
+            </td>
+        </tr>
+    <div>
+        <table width="100%" >
+            <tr align="center">
+                <td width="40%" align="right">
+                    <font>用户名</font>
+                </td>
+                <td width="60%" align="left">
+                    <input type="text" placeholder="请输入用户名" id="username" onblur="checkUserName()">
+                    <span id="usernameSpan"></span>
+                </td>
+            </tr><br>
+        </table>
+    </div>
+    <div>
+        <table width="100%" >
+            <tr align="center">
+                <td width="40%" align="right">
+                    <font>密码</font>
+                </td>
+                <td width="60%" align="left">
+                    <input type="password" placeholder="请输入密码"id="password" onblur="checkpassword()">
+                    <span id="passwordSpan"></span>
+                </td><br>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table width="100%" >
+            <tr align="center">
+                <td width="40%" align="right">
+                    <font>确认密码</font>
+                </td>
+                <td width="60%" align="left">
+                    <input type="password" placeholder="请再次输入密码">
+                </td><br>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table width="100%" >
+            <tr align="center">
+                <td width="40%" align="right">
+                    <font>性别</font>
+                </td>
+                <td width="60%" align="left">
+                    <!--                        <input type="text" placeholder="请输入性别">-->
+                    <input type="radio" name="gender" value="man">男
+                    <input type="radio" name="gender" value="femela">女
+                </td><br>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table width="100%" >
+            <tr align="center">
+                <td width="40%" align="right">
+                    <font>出生日期</font>
+                </td>
+                <td width="60%" align="left">
+                    <input type="text" placeholder="请输入年/月/日">
+                </td><br>
+            </tr>
+        </table>
+    </div>
+        </table>
+</div>
+    <div>
+        <hr>
+        <table>
+            <tr>
+                <table width="100%">
+                    <tr align="center">
+                        <td>
+                            <p>
+                                <a href="#"><font>联系我们</font></a>&nbsp;
+                                <a href="#"><font>联系客服</font></a>&nbsp;
+                                <a href="#"><font>合作招商</font></a>&nbsp;
+                                <a href="#"><font>商家指南</font></a>&nbsp;
+                                <a href="#"><font>营销中心</font></a>&nbsp;
+                                <a href="#"><font>手机帮助</font></a>&nbsp;
+                                <a href="#"><font>销售联盟</font></a>&nbsp;
+                            </p>
+                        </td>
+                    </tr>
+                    <tr >
+                        <td align="center">
+                            <font>&copy;2005-2020东易买&nbsp;版权所有，并保留所有权</font>
+                        </td>
+                    </tr>
+                </table>
+            </tr>
+        </table>
+    </div>
+    </div>
+</form>
+</body>
+</html>

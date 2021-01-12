@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="com.offcn.spring.User">
+            <property name="name" value="张曼玉"></property>
+            <property name="age" value="23"></property>
+            <property name="car" ref="car"></property>
+    </bean>
+    <bean name="car" class="com.offcn.spring.Car">
+        <property name="name" value="凯迪拉克"/>
+        <property name="color" value="黄色"/>
+    </bean>
+  <bean name="user1" class="com.offcn.spring.User">
+      <constructor-arg name="name" value="jerry"></constructor-arg>
+      <constructor-arg name="age" value="23"></constructor-arg>
+      <constructor-arg name="car" ref="car"></constructor-arg>
+  </bean>
+
+    <bean name="user2" class="com.offcn.spring.User">
+        <constructor-arg index="0" value="张三丰"></constructor-arg>
+        <constructor-arg index="1" value="23"></constructor-arg>
+        <constructor-arg name="car" ref="car"></constructor-arg>
+    </bean>
+    <bean name="bean1" class="com.offcn.spring.Beanzhu">
+<!--        <property name="arr" value="tom"></property>-->
+        <property name="arr">
+            <array>
+                <value>tom</value>
+                <value>jerry</value>
+                <value>tion</value>
+            </array>
+        </property>
+        <property name="list">
+            <list>
+                <value>1</value>
+                <value>2</value>
+                <value>2</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="1" value="黄色"></entry>
+                <entry key="2" value="红色"></entry>
+                <entry key-ref="car" value-ref="car"></entry>
+            </map>
+        </property>
+        <property name="prop">
+            <props>
+                <prop key="abc">abc</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>

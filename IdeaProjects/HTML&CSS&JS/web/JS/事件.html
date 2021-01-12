@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            alert("页面被执行了")
+        }
+        function clickEle() {
+            alert("ffasdad");
+            return false;
+        }
+    </script>
+</head>
+<body>
+<form action="变量.html">
+    <input type="submit" value="提交" onclick="return clickEle()">
+</form>
+
+</body>
+</html>

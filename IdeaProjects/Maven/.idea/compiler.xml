@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springAop" />
+        <module name="springboot" />
+        <module name="spring" />
+        <module name="springbootshopping" />
+        <module name="Shop1" />
+        <module name="maven1" />
+        <module name="department" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="company" target="1.8" />
+      <module name="select" target="1.8" />
+      <module name="shop2" target="1.8" />
+      <module name="shopping" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="company" options="-parameters" />
+      <module name="department" options="-parameters" />
+      <module name="springboot" options="-parameters" />
+      <module name="springbootshopping" options="-parameters" />
+    </option>
+  </component>
+</project>

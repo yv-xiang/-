@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2</title>
+   <!-- <script>
+        var url=location.search;
+        var Request = new Object();
+        if(url.indexOf("?")!=-1){
+            var str = url.substr(1)　//去掉?号
+            strs = str.split("&");
+            for(var i=0;i<strs.length;i++){
+                Request[strs[i ].split("=")[0]]=unescape(strs[i].split("=")[1]);
+            }
+        }
+        alert(Request["username"])
+        alert(Request["sex"])
+    </script>-->
+<!--    <script language="javascript" type="text/javascript"> &lt;!&ndash;
+    //获取Location对象的search属性值
+    var searchStr = location.search;
+    //由于searchStr属性值包括“?”，所以除去该字符
+    searchStr = searchStr.substr(1);
+    //将searchStr字符串分割成数组，数组中的每一个元素为一个参数和参数值
+    var searchs = searchStr.split("&");
+    //获得第一个参数和值
+    var address = searchs[0].split("=");
+    switch (address[1])
+    {
+        case "beijing":
+            document.write("您选择的地址为：北京<br>");
+            break;
+        case "shanghai":
+            document.write("您选择的地址为：上海<br>");
+            break;
+        case "shenzhen":
+            document.write("您选择的地址为：深圳<br>");
+            break;
+    }
+    //获得第二个参数和值
+    var sex = searchs[1].split("=");
+    switch (sex[1])
+    {
+        case "men":
+            document.write("您选择的性别为：男<br>");
+            break;
+        case "women":
+            document.write("您选择的性别为：女<br>");
+            break;
+    }
+
+    </script>-->
+    <script type="text/javascript">
+    function GetRequest() {
+    var url = location.search; //获取url中"?"符后的字串
+    var theRequest = new Object();
+    if (url.indexOf("?") != -1) {
+    var str = url.substr(1);
+    strs = str.split("&");
+    for(var i = 0; i < strs.length; i ++) {
+    theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+    }
+    }
+    return theRequest;
+    }
+    var Request = new Object();
+    Request = GetRequest();
+    // var 参数1,参数2,参数3,参数N;
+    // 参数1 = Request['参数1'];
+    </script>
+</head>
+<body>
+
+</body>
+</html>
